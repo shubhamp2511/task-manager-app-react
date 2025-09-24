@@ -1,0 +1,172 @@
+/* CSS Variables for theming */
+:root {
+    --color-bg-light: #f9f9f9;
+    --color-text-light: #111;
+    --color-bg-dark: #222;
+    --color-text-dark: #eee;
+    --color-primary: #4caf50;
+    --color-danger: #f44336;
+  }
+  
+  body.light {
+    background-color: var(--color-bg-light);
+    color: var(--color-text-light);
+  }
+  
+  body.dark {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-dark);
+  }
+  
+  /* General styles */
+  body, input, button {
+    font-family: Arial, sans-serif;
+  }
+  
+  .app {
+    max-width: 480px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  /* Task input form */
+  .task-input {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .task-input input {
+    flex: 1;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .task-input button {
+    padding: 0 1rem;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .task-input button:hover {
+    background-color: #388e3c;
+  }
+  
+  /* Filter buttons */
+  .filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .filters button {
+    border: none;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .filters button.active {
+    color: var(--color-primary);
+    text-decoration: underline;
+  }
+  
+  /* Task list */
+  .task-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .task {
+    background-color: rgba(0,0,0,0.05);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  body.dark .task {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .task.completed span {
+    text-decoration: line-through;
+    opacity: 0.6;
+  }
+  
+  .task input[type="checkbox"] {
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+  
+  .task button {
+    margin-left: auto;
+    background-color: transparent;
+    border: none;
+    color: var(--color-danger);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .task button:hover {
+    color: #d32f2f;
+  }
+  
+  /* Animations */
+  .task-enter {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .task-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Theme toggle button */
+  .theme-toggle {
+    display: block;
+    margin: 0 auto 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: var(--color-primary);
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .theme-toggle:hover {
+    background-color: #388e3c;
+  }
+  
+  /* Responsive mobile-first */
+  @media (max-width: 600px) {
+    .app {
+      margin: 1rem;
+      padding: 0.5rem;
+    }
+  
+    .task-input button, .theme-toggle {
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+  }
+  
