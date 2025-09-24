@@ -54,3 +54,7 @@ Delete a task with the delete button.
 Filter your view using the filter buttons.
 Change theme using the mode toggle.
 Drag tasks to reorder them.
+
+
+
+
