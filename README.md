@@ -1,7 +1,7 @@
-*React Task Manager App*
+## React Task Manager App ##
 A modern and feature-rich Task Manager application built with React. Manage daily tasks efficiently with persistent storage, drag-and-drop reordering, dark/light mode, form validation, and responsive UI.
 
-**Features**
+## Features ##
 Add, Complete, Delete Tasks: Quickly create and manage your task list.
 Filter Tasks: View all, completed, or pending tasks.
 Persistent Storage: Tasks are saved to browser Local Storage.
@@ -13,7 +13,7 @@ Animations: Smooth transitions when adding or removing tasks.
 Responsive Design: Mobile-first, works across devices.
 Performance Optimized: Uses React.memo, useCallback, and useMemo.
 
-**Technologies Used**
+## Technologies Used ##
 React (with hooks)
 React Context API
 React Beautiful DnD
