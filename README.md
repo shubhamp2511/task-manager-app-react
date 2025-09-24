@@ -21,19 +21,19 @@ Custom Hooks
 CSS (modules/vanilla)
 Local Storage
 
-**Getting Started**
-   ***Prerequisites***
+## Getting Started ##
+   ### Prerequisites ###
       Node.js (v16+ recommended)
       npm (v8+ recommended)
-   ***Installation***
+   ### Installation ###
      git clone https://github.com/your-username/task-manager-app.git
      cd task-manager-app
      npm install
-   ***Running the App***
+   ### Running the App ###
      npm start
      Open http://localhost:3000 to view in your browser.
 
-**Folder Structure**
+## Folder Structure ##
 task-manager-app/
 ├── public/
 │   └── index.html
@@ -47,14 +47,10 @@ task-manager-app/
 ├── package.json
 └── README.md
 
-**Usage**
+## Usage ##
 Enter a task in the input field and click "Add".
 Toggle completion by clicking the checkbox.
 Delete a task with the delete button.
 Filter your view using the filter buttons.
 Change theme using the mode toggle.
 Drag tasks to reorder them.
-
-
-
-
